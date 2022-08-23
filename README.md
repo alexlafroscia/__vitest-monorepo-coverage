@@ -2,6 +2,8 @@
 
 This repository demonstrates a difference in Vitest's code coverage gathering when working with mono-repos.
 
+See https://github.com/vitest-dev/vitest/issues/1902
+
 ## Summary
 
 If you're working with a mono-repo where internal package `b` depends on another internal package `a`, and Vitest is executed from the mono-repo root using the `-r` flag to define the root of the package to test, the code coverage report will include the files from `a` in the despite it being a dependency.
