@@ -1,0 +1,11 @@
+{
+  "name": "__vitest-monorepo-coverage",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "vitest run --coverage -r packages/b"
+  }
+}
